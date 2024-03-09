@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+    <img id="image" src="image1.jpg">
+    <button onclick="changeImage()">Change the Image</button>
+    <button onclick="revertImage()">Revert the Image</button>   
+    <script>
+        function changeImage(){
+            document.getElementById("image").src = "image2.jpg";
+        }
+        function revertImage(){
+            document.getElementById("image").src = "image1.jpg";
+        }
+    </script>
+    <style>
+        #image{
+            width: 30vw;
+            height: 30vw;
+        }
+    </style> 
+</body>
+</html>
